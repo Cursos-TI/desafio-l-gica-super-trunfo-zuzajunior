@@ -8,6 +8,49 @@
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
+    printf("**CARTA 1**\n");
+    printf("\n");
+
+     char estado[20];
+     char codigo [1] ;
+     int carta = 0;
+     char nome[20] = "";
+     int quantidade = 0;
+     float pib = 0.0;
+     float area = 0.0;
+     int pontos = 0;
+
+
+     printf("Digite o nome do Estado: \n");
+     scanf("%s", &estado);
+
+     printf("Digite o código da carta: \n");
+     scanf("%s", &codigo);
+
+     printf("Digite o nome da cidade: \n");
+     scanf("%s", &nome);
+
+     printf("Digite a quantidade da  população: \n");
+     scanf("%d", &quantidade);
+
+     printf("Digite o Pib: \n");
+     scanf("%f", &pib);
+
+     printf("Digite a Àrea: \n");
+     scaf("%f", &area);
+
+     printf("Digite os pontos Turísticos>\n");
+     scanf("%d", &pontos);
+
+
+     printf("Estado: %s\n", estado);
+     printf("Código: %c\n", codigo);
+     printf("População: %d", quantidade);
+     printf("Pib: %f\n", pib);
+     printf("Pontos: %d\n", pontos);
+
+
+
 
     
     // Cadastro das Cartas:
@@ -18,7 +61,8 @@ int main() {
     // Exemplo:
     // printf("Digite o código da cidade: ");
     // scanf("%s", codigo);
-    // 
+   
+
     // (Repita para cada propriedade)
 
     // Comparação de Cartas:
@@ -40,4 +84,6 @@ int main() {
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
     return 0;
+
+
 }
