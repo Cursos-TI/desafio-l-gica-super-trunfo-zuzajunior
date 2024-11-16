@@ -11,83 +11,106 @@ int main() {
     printf("**CARTA 1**\n");
     printf("\n");
 
-     char estado[20];
-     char codigo ;
-     char cidade[20] = "";
-     int quantidade = 0;
-     float pib = 0.0;
-     float area = 0.0;
-     int pontos = 0;
+     char estadoA[20], estadoB[20];
+     char codigoA, codigoB ;
+     char cidadeA[20] = "", cidadeB[20]= "";
+     int populacaoA = 0, populacaoB = 0;
+     float pibA = 0.0, pibB = 0.0;
+     float areaA = 0.0, areaB = 0.0;
+     int pontosA = 0, pontosB = 0;
 
 
      printf("Digite o nome do Estado: \n");
-     scanf("%s", &estado);
+     scanf("%s", &estadoA);
 
      printf("Digite o código da carta: \n");
-     scanf("%s", &codigo);
+     scanf("%s", &codigoA);
 
      printf("Digite o nome da cidade: \n");
-     scanf("%s", &cidade);
+     scanf("%s", &cidadeA);
 
      printf("Digite a quantidade da  população: \n");
-     scanf("%d", &quantidade);
+     scanf("%d", &populacaoA);
 
      printf("Digite o Pib: \n");
-     scanf("%f", &pib);
+     scanf("%f", &pibA);
 
      printf("Digite a Àrea: \n");
-     scanf("%f", &area);
+     scanf("%f", &areaA);
 
-     printf("Digite os pontos Turísticos: \n");
-     scanf("%d", &pontos);
+     printf("Digite a quantidadade de pontos Turísticos: \n");
+     scanf("%d", &pontosA);
 
      printf("\n");
 
 
-     printf("Estado: %s\n", estado);
-     printf("Código: %c\n", codigo);
-     printf("Cidade: %s\n", cidade);
-     printf("População: %d\n", quantidade);
-     printf("Pib: %f\n", pib);
-     printf("Ârea: %f\n", area);
-     printf("Pontos: %d\n", pontos);
+     printf("Estado: %s\n", estadoA);
+     printf("Código: %c\n", codigoA);
+     printf("Cidade: %s\n", cidadeA);
+     printf("População: %d\n", populacaoA);
+     printf("Pib: %f\n", pibA);
+     printf("Ârea: %f\n", areaA);
+     printf("Pontos: %d\n", pontosA);
      printf("\n");
 
      printf("**CARTA 2**\n");
      printf("\n");
 
      printf("Digite o nome do Estado: \n");
-     scanf("%s", &estado);
+     scanf("%s", &estadoB);
 
      printf("Digite o código da carta: \n");
-     scanf("%s", &codigo);
+     scanf("%s", &codigoB);
 
      printf("Digite o nome da cidade: \n");
-     scanf("%s", &cidade);
+     scanf("%s", &cidadeB);
 
      printf("Digite a quantidade da  população: \n");
-     scanf("%d", &quantidade);
+     scanf("%d", &populacaoB);
 
      printf("Digite o Pib: \n");
-     scanf("%f", &pib);
+     scanf("%f", &pibB);
 
      printf("Digite a Àrea: \n");
-     scanf("%f", &area);
+     scanf("%f", &areaB);
 
-     printf("Digite os pontos Turísticos: \n");
-     scanf("%d", &pontos);
+     printf("Digite a quantidade de pontos Turísticos: \n");
+     scanf("%d", &pontosB);
 
-     printf("Estado: %s\n", estado);
-     printf("Código: %c\n", codigo);
-     printf("Cidade: &s\n", cidade);
-     printf("População: %d\n", quantidade);
-     printf("Pib: %f\n", pib);
-     printf("Ârea: %f\n", area);
-     printf("Pontos: %d\n", pontos);
+     printf("Estado: %s\n", estadoB);
+     printf("Código: %c\n", codigoB);
+     printf("Cidade: &s\n", cidadeB);
+     printf("População: %d\n", populacaoB);
+     printf("Pib: %f\n", pibB);
+     printf("Ârea: %f\n", areaB);
+     printf("Pontos: %d\n", pontosB);
      printf("\n");
      
 
+     if (populacaoA > populacaoB) {
+           printf("Cidade 1 tem maior população.\n");
+       } else {
+           printf("Cidade 2 tem maior população.\n");
+       }
 
+       if (pibA > pibB) {
+           printf("Cidade 1 tem maior pib.\n");
+       } else {
+           printf("Cidade 2 tem maior pib.\n");
+       }
+
+       if (areaA > areaB) {
+           printf("Cidade 1 tem maior área.\n");
+       } else {
+           printf("Cidade 2 tem maior área.\n");
+       }
+
+
+    if (pontosA > pontosB) {
+           printf("Cidade 1 tem maior quantidade de pontos Turísticos.\n");
+       } else {
+           printf("Cidade 2 tem maior quantidade de pontos Turísticos.\n");
+       }
 
 
 
